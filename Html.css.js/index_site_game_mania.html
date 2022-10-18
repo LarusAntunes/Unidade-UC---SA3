@@ -1,0 +1,183 @@
+<!-- <!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <link rel="stylesheet" href="css/style.css">
+        
+        <link rel="icon" href="img/Logo Gamemania.png" sizes="50x50">
+        <link rel="stylesheet" type="text/css" href="bootstrap-5.0.2-dist/css/bootstrap.min.css"> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title> GameMania - Loja Virtual </title>
+        <meta name="description" content="Loja Virtual GameMania"/>
+        <meta name="keywords" content="Games, Jogos, Informática, Notebooks"/>
+        <meta name="author" content="Lárus Baptista"/>
+        <!--base href="http://www.gamemania.com.br/" target="_blank"/-->
+        
+    </head>
+
+    <body class="margem">
+        <header> <!--Parte superior do site,LOGO, Caixa de pesquisa, Carrinho e Login-->
+            <div class="cabecalho">
+                <a href="index_teste.html">
+                <img class="logo" id="logo-site" src="img/Logo Gamemania.png" alt="Logo GameMania"></a>                         
+                <div id="menu" class="menu"> 
+                    <a href="index_teste.html"><button type="button" class="btn btn-secondary">INICIO</button></a>
+
+                        <section id="botao de pesquisa" class="pesquisa">        
+                            <nav class="navbar navbar-dark bg-dark">
+                                <div class="container-fluid">
+                                    <form class="d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-outline-success" type="submit">Search</button>
+                                    </form>
+                                </div>
+                            </nav>
+                            <img id="imagem-lupa" src="img/Lupa.png"
+                                alt="Lupa" width="5%">
+                        </section>
+                        
+                    <a href="carrinho.html"> <img id="imagem-carrinho" src="img/Carrinho.png"
+                            alt="Carrinho" width="56.98px" height="48.64px"> </a>
+                            
+                    <a href="loginusuario.html"><button type="button" class="btn btn-secondary">LOGIN</button>
+                </div>             
+            </div>
+                
+        </header> 
+        
+        <br>
+
+        <main> <!--Faixa preta com imagens dos jogos e botoes das categorias-->
+            <div>
+                <section style="background-color:rgba(0, 0, 0, 0.89) ;" class="carrocel_teste">
+                    <div class="marquee">
+                        <ul class="marquee-content"></ul>
+                            <a href="#" target="_blank"> <img class="imagem-jogos" src="img/the wicher.png" alt="the-witcher" width=""></a>
+                            <a href="#" target="_blank"> <img class="imagem-jogos" src="img/ark.jpg" alt="ark" width=""></a>
+                            <a href="#" target="_blank"> <img class="imagem-jogos" src="img/Bioshock.jfif" alt="Bioshock" width=""></a>
+                            <a href="#" target="_blank"> <img class="imagem-jogos" src="img/Mario kart.jfif" alt="mario-kart" width=""></a>
+                            <a href="#" target="_blank"> <img class="imagem-jogos" src="img/cod.jfif" alt="cod" width=""></a>
+                            <a href="#" target="_blank"> <img class="imagem-jogos" src="img/skyrim.jfif" alt="skyrim" width=""></a>
+                            <a href="#" target="_blank"> <img class="imagem-jogos" src="img/League od legends.jfif" alt="skyrim" width=""></a>
+                            <a href="#" target="_blank"> <img class="imagem-jogos" src="img/fortnie.jfif" alt="skyrim" width=""></a>
+                            <a href="#" target="_blank"> <img class="imagem-jogos" src="img/cs go.jfif" alt="skyrim" width=""></a>
+                        </ul>
+                    </div>
+                    
+                    
+                </section>
+      
+                <section class="menu container" id="menu-botoes">
+                                                               
+                    <a href="/html/" target="_blank"><button type="button" class="btn btn-outline-primary">Acessórios</button></a>
+                    <a href="/html/" target="_blank"><button type="button" class="btn btn-outline-primary">Consoles</button></a>
+                    <a href="/html/" target="_blank"><button type="button" class="btn btn-outline-primary">Gadgets</button></a>
+                    <a href="/html/" target="_blank"><button type="button" class="btn btn-outline-primary">Smartphones</button></a>
+                    <a href="/html/" target="_blank"><button type="button" class="btn btn-outline-primary">Mídias</button></a>
+                    <a href="/html/" target="_blank"><button type="button" class="btn btn-outline-primary">Gamer</button></a>
+                    <a href="/html/" target="_blank"><button type="button" class="btn btn-outline-primary">Informática</button></a>
+                    <a href="/html/" target="_blank"><button type="button" class="btn btn-outline-primary">Notebooks</button></a>                               
+                </section>
+            </div>
+        
+
+            <section>
+                <!-- <nav class="container"> -->
+
+                    <div class="destaques">
+                        <figure class="imagem"> <!--Fundo branco com as 3 imagens e textos: PROMOÇÔES, NOVIDADES, DESCONTOS-->
+                            
+                            <img class="box-shadow imagem_imagem" src="img/Controle Xbox.jpeg" alt="Promoções" width="30%">
+                            <div class="imagem_overlay .imagem_overlay--blur">
+                                <div class="titulo_imagem">PROMOÇÕES</div>
+                                <p class="descricao_imagem">
+                                    Ofertas até 50% OFF
+                            </div>
+                        </figure>
+                        <figure class="imagem">
+                            <img class="box-shadow imagem_imagem" src="img/Controle Playstation.jpg" alt="Novidades" width="30%">
+                            <div class="imagem_overlay .imagem_overlay--blur">
+                                <div class="titulo_imagem">NOVIDADES</div>
+                                <p class="descricao_imagem">
+                                    Atualizações e mais
+                            </div>
+                        </figure>
+                        <figure class="imagem"> 
+                            <img class="box-shadow imagem_imagem" src="img/Fundo Descontos.jpg" alt="Comunidade" width="30%">
+                            <div class="imagem_overlay .imagem_overlay--blur">
+                                <div class="titulo_imagem">COMUNIDADE</div>
+                                <p class="descricao_imagem">
+                                    Junte-se ao time
+                            </div>
+                        </figure> 
+                    </div>
+    
+                <!-- </nav> -->
+            </section>
+
+            <section>
+                <nav>
+                    <figure> <!--Faixa com a foto do fone e teclado, com margem preta-->
+                        <img id="divisória-site" class="divisoria" src="https://images.pexels.com/photos/3165335/pexels-photo-3165335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        alt="Foto teclado">
+                    </figure>
+                </nav>
+            </section>
+
+            <section> <!--Fundo branco com 3 retângulos, e os textos: Contato; Quem somos; Como chegar-->
+                <nav class="contatos">
+                    <div class="card text-center card border-primary mb-3 box-shadow" style="width: 18rem;">                     
+                        <img src="img/Fundo Contato.png" class="card-img-top" alt="contatos">
+                        <div class="card-body">
+                          <h5 class="card-title">CONTATOS</h5>
+                          <p class="card-text">Telefone: (99)9999-9999</p>
+                          <p class="card-text">gamemania@email.com</p>
+                          <a href="#" class="btn btn-primary">Fale conosco</a>
+                        </div>
+                    </div>
+                    <div class="card text-center card border-primary mb-3 box-shadow" style="width: 18rem;">
+                        <img src="img/Fundo Quem somos.jpeg" class="card-img-top" alt="Quem somos">
+                        <div class="card-body">
+                          <h5 class="card-title">QUEM SOMOS</h5>
+                          <p class="card-text"> Nossa missão: xxxxxxxx</p>
+                          <p class="card-text"> Visão e valores: xxxxxxx</p>
+                          
+                          <a href="#" class="btn btn-primary">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="card text-center card border-primary mb-3 box-shadow" style="width: 18rem;">
+                        <img src="img/Fundo Como chegar.png" class="card-img-top" alt="como chegar">
+                        <div class="card-body">
+                          <h5 class="card-title">COMO CHEGAR</h5>
+                          <p class="card-text">Mapa /Localização</p>
+                          <br>
+                        
+                         
+                          <a href="#" class="btn btn-primary">Venhe nos conhecer</a>
+                        </div>
+                    </div>
+
+                </nav>  
+            </section>
+        </main>
+
+        <footer style="background-color: #0B0E46;">
+            <div style="color:rgb(206, 216, 216);text-align-last: center;">
+                <h2> NOSSAS REDES SOCIAIS</h2>
+            </div>
+            <div class="redes_sociais"> <!--LOGO redes sociais-->
+                <a href="#" target="_blank"> <img src="img/whats.png" alt="" width="30px"></a>
+                <h6 class="cores_letras"> WhatsApp: (99)9999-9999</h6>
+                <a href="#" target="_blank"> <img src="img/insta.png" alt="" width="30px"></a>
+                <h6 class="cores_letras"> Intagram: @gamemania</h6>
+                <a href="#" target="_blank"> <img src="img/face.png"  alt="" width="30px"></a>
+                <h6 class="cores_letras"> Facebook:GameMania</h6>           
+            </div>
+
+        </footer>
+    </body>
+<script type="text/javascript" src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+</html>  -->
