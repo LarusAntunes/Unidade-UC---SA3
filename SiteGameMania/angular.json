@@ -28,7 +28,9 @@
               "src/styles.css"
             ],
             "scripts": [
-             
+              "GameMania/src/assets/js/script.js",
+              "GameMania/src/assets/js/carrocel.js",
+              "GameMania/src/assets/js/jquery.js"
             ]
           },
           "configurations": {
@@ -97,9 +99,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "GameMania/src/assets/js/script.js",
-              "GameMania/src/assets/js/carrocel.js",
-              "GameMania/src/assets/js/jquery.js"
+
             ]
           }
         }
