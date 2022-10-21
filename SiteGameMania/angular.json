@@ -18,7 +18,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": true,
+            
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -28,9 +28,9 @@
               "src/styles.css"
             ],
             "scripts": [
-              "GameMania/src/assets/js/script.js",
-              "GameMania/src/assets/js/carrocel.js",
-              "GameMania/src/assets/js/jquery.js"
+              // "SiteGameMania/src/assets/js/script.js",
+              // "SiteGameMania/src/assets/js/carrocel.js",
+              // "SiteGameMania/src/assets/js/jquery.ts"
             ]
           },
           "configurations": {

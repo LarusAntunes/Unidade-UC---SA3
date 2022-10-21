@@ -1,29 +1,23 @@
 <body class="margem">
-    <header> <!--Parte superior do site,LOGO, Caixa de pesquisa, Carrinho e Login-->
-        <div class="cabecalho">
-            <a href="index_teste.html">
-            <img class="logo" id="logo-site" src="img/Logo Gamemania.png" alt="Logo GameMania"></a>                         
-            <div id="menu" class="menu"> 
-
-            </div>             
-        </div>
-    </header>
-
-    <br>
-
     <main>
-        <div id="login_cadastro" class="container_login">
-            <div class="cadastro cores_letras">
-                <h2>LOGIN</h2>
-                <form action="/action_page.php">
-                    <label for="fname">E-mail:</label><br>
-                    <input type="text" id="fname" name="fname" value=""><br>
-                    <label for="lname">Senha:</label><br>
-                    <input type="text" id="lname" name="lname" value=""><br><br>
-                    <input type="submit" value="ENTRAR">
-                </form> 
-            </div>
-        </div>
+        <form (ngSubmit) = "receberDados()">
 
+            <div id="login_cadastro" class="container_login">
+                <div class="cadastro cores_letras">
+                    <h2>LOGIN</h2>
+                    <form action="/action_page.php">
+                        <label for="email">E-mail:</label><br>
+                        <input type="email" id="email" name="email" placeholder=" Ex.: email@email.com"[(ngModel)]="userModel.email" ><br>
+
+                        <label id="senha" for="lname">Senha:</label><br>
+                        <input type="password" id="senha" name="password" placeholder="Sua senha aqui ... " [(ngModel)]="userModel.password"><br><br>
+                        <input id="botao-enviar" type="submit" value="ENTRAR">
+                    </form> 
+                </div>
+            </div>
+            <div>
+            Medida
+            </div>
+        </form>
     </main>
 </body>

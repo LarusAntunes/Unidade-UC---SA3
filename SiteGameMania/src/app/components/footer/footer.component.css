@@ -1,24 +1,10 @@
 
-.contatos {
-    /* height: 200px; */
-    
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    align-content: center;
-    
-    padding: 28px; 
-    margin-left: 100px;
-    margin-right: 100px;
-    object-fit: cover;
-}
-
-.box-shadow{
+/* .box-shadow{
     background: #ccc;
     box-shadow: 4px 3px 8px 1px #000000;
     -webkit-box-shadow: 4px 3px 8px 1px #000000;
     
-}
+} */
 
 .redes_sociais{
 
