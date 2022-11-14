@@ -28,10 +28,9 @@
               "src/styles.css"
             ],
             "scripts": [
-              "SiteGameMania/src/app/assets/js/script.js",
-              "SiteGameMania/src/app/assets/js/carrocel.js",
-              "SiteGameMania/src/app/assets/js/jquery.ts"
-              
+              "src/assets/js/jquery.js",
+              "src/assets/js/carrocel.js",
+              "src/assets/js/scripts.js"             
             ]
           },
           "configurations": {
