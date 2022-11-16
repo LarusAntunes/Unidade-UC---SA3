@@ -29,8 +29,8 @@
             ],
             "scripts": [
               "src/assets/js/jquery.js",
-              "src/assets/js/carrocel.js",
-              "src/assets/js/scripts.js"             
+              "src/assets/js/carrocel.js"
+                           
             ]
           },
           "configurations": {
