@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { response } from 'express';
 import { User } from 'src/app/model/user';
+import { LoginService } from 'src/app/services/login.service';
 
 @Component({
   selector: 'app-login',
@@ -8,7 +10,7 @@ import { User } from 'src/app/model/user';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private loginService: LoginService) { }
 
   ngOnInit(): void {    
   }
@@ -17,6 +19,12 @@ export class LoginComponent implements OnInit {
  
   receberDados() {
     console.log(this.userModel)
+
+    this.loginService.login(this.userModel).subscribe ( (response) => {
+      console.log("Deu certo")
+    }, (erro) => {
+      console.log( "Deu erro")
+    })
   }
 
 }
