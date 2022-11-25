@@ -1,3 +1,7 @@
 <app-header></app-header>
 <router-outlet></router-outlet>
 <app-footer></app-footer>
+<form #form="ngForm" (ngSubmit)="submit(form)" novalidate>
+    <input name="first" ngModel required #first="ngModel">
+    <input name="last" ngModel>
+</form>

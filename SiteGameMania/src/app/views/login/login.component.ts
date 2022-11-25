@@ -20,8 +20,8 @@ export class LoginComponent implements OnInit {
 
   mensagem=""
  
-  // receberDados() {
-  onSybmit(){
+  receberDados() {
+  // onSubmit(){
     console.log(this.userModel)
 
     const listaPalavras: string[] = ["select ", "from ", "drop ", "or ", "having ", "group ", "by ", "insert ", "exec ", "\"", "\'", "--", "#", "*", ";"]
