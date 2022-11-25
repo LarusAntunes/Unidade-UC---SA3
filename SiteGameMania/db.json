@@ -1,4 +1,21 @@
-{  
+{
+  "login": [
+    {
+      "id": 1,
+      "usuario": "Joao",
+      "senha": "banana"
+    },
+    {
+      "id": 2,
+      "usuario": "Ana",
+      "senha": "cachorro"
+    },
+    {
+      "usuario": "José",
+      "senha": "feijao",
+      "id": 3
+    }
+  ],
   "posts": [
     {
       "id": 1,
