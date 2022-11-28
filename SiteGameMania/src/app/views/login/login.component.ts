@@ -11,18 +11,17 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private loginService: LoginService, private router: Router) { }
+  constructor(private loginService: LoginService) { }
 
   ngOnInit(): void {    
   }
 
-  userModel = new User();
-
-  mensagem=""
+  userModel = new User("","");
+  mensagem = ""
  
   receberDados() {
   // onSubmit(){
-    console.log(this.userModel)
+    // console.log(this.userModel)
 
     const listaPalavras: string[] = ["select ", "from ", "drop ", "or ", "having ", "group ", "by ", "insert ", "exec ", "\"", "\'", "--", "#", "*", ";"]
 
@@ -35,10 +34,12 @@ export class LoginComponent implements OnInit {
     });
 
     this.loginService.login(this.userModel).subscribe( (response) => {
-      console.log("Deu certo")
-      localStorage.setItem("nomeUsuario", response.body.user.nome)
+      console.log("response:", response)
+      console.log("O Status Code é:", response.status)
+      console.log("O token de permissão é:", response.body.acessToken)
 
-      // this.router.navigateByUrl("/")
+      this.mensagem = "Bem vindo " + response.body.user.home
+      console.log(this.mensagem)
     }, (respostaErro) => {
       console.log( "Deu erro")
       this.mensagem = respostaErro.error
@@ -48,8 +49,8 @@ export class LoginComponent implements OnInit {
       } else {
         this.mensagem = respostaErro.error
       }
-      // alert("ERRO")
-    })
+    }
+    )
   }
 
 }

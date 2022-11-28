@@ -1,27 +1,27 @@
-<body class="margem">
-    <main>
-        <form (ngSubmit)="receberDados()">
 
-            <div id="login_cadastro" class="container_login">
+    <main>
+        <form class="container_login" #userform="ngForm" (ngSubmit)="receberDados()">
+
+            <div id="login_cadastro" >
                 <div class="cadastro cores_letras">
                     <h2>LOGIN</h2>
-                    
-                    <form action="/action_page.php">
-                        <label for="email">E-mail:</label><br>
-                        <input type="email" id="email" name="email" placeholder=" Ex.: email@email.com"[(ngModel)]="userModel.email" ><br>
-                   
-                        <label for="senha">Senha:</label><br>
-                        <input type="password" id="senha" name="password" placeholder="Sua senha aqui ... " [(ngModel)]="userModel.password"><br><br>
-                    
-                        
-                        <input id="botao-enviar" type="submit" value="Fazer Login">
-                    </form> 
-                </div>
-            </div>
-          
-        </form>
-        <p id="'mensagem" *ngIf=" mensagem != '' "> {{ mensagem}}.</p>
-    </main>
-    <!-- <app-footer></app-footer> -->
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="campo-email" name="email" placeholder=" Ex.: email@email.com"
+                    [(ngModel)]="userModel.email" ><br> 
+                </div> 
 
-</body> 
+                <div >                       
+                    <label for="senha">Senha:</label><br>
+                    <input type="password" id="password" name="password" placeholder="Sua senha aqui ... " 
+                    [(ngModel)]="userModel.password"><br><br>                         
+                </div>
+                <input id="botao-enviar" type="submit" value="Fazer Login">
+            </div>
+        </form>
+        <!-- <p id="'mensagem" *ngIf=" mensagem != '' ">Teste</p> -->
+    </main>
+                     
+          
+
+
+ 
